@@ -11,7 +11,7 @@ Exploratory Data Analysis (EDA) phase is done.
 - Clean the dataset from any ambiguous values
 - Create one-hot-encoding for some of the features
 - Apply the model
-- Train and test a naive bayes model to classify the data and got 88.75%
+- Train and test data with different models 
 
 ## There furthur steps to accomplish the project: 
 - Use different models to predict strokes. 
