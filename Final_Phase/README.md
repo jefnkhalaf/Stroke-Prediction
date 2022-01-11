@@ -1,56 +1,49 @@
-# COVID-19_Vaccines_Tweets
-Manal Nawar Allahyani. 
-
+# Stroke Prediction
+Jefn Alshammari & Abdulaziz Almass
 ## Abstract
-This project aimed to understand people's emotions about the covid-19 vaccines by analyzing the tweets using machine learning models to help the safety of society, and know the most covid-19 vaccine that is comfortable for the people. The used data in this project is provided by Kaggle, the data is labeled using Sentiment Intensity Analyzer, with sklearn library random forest was trained and get 97% accuracy. The streamlit is used to build an interactive dashboard to visualize and communicate the final results. 
+This project aimed to predict stroke for people by analyzing a dataset found in Kaggle using different machine learning models(MLs) to help the medical staff to recongize those people with high risk of getting stroke in the future. The used dataset was trained and get X% accuracy as the highest value of the different used models.  
 
-<!-- The data has been explored, cleaned, and new features such as labeling the tweets 0 for negative tweets and 1 for positive tweets have been added, as well as on-hot-encoding for the vaccine type has been added.  -->
+<!-- The data has been explored, cleaned and One-Hot-Encoding for some of the features such as "gender" ...etc.  -->
 
 ## Design
 
-This project is one of the T5 Data Science BootCamp requirements. Data provided by Kaggle has been used in this project. The COVID-19 vaccines included in the data are Pfizer/BioNTech, Sinopharm, Sinovac, Moderna, Oxford/AstraZeneca, Covaxin, and Sputnik V. Classifying how people feel positive/negative to covid-19 vaccines using machine learning algorithms would enable understanding most comfortable vaccine for people
+This project is one of the T5 Data Science BootCamp requirements. Data provided by Kaggle has been used in this project. The attribute "Stroke" is the label or target to be predicted in this project. This target is binary having either 1 or 0 as a value. The value of "1" means predicted with stroke and "0" means predicted without a stroke. This classifcation prediction will be deployed using various machine learning models and a comparison of these models is done to measure of performance for each model to find the one that fits with the selected dataset. All of the following models have been used and tested: Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree,  Support-Vector Machines (SVM),Random Forest and XGBoost.  
 
 ## Data 
 
-The dataset is provided in ```.csv``` format. It contains 19,3272 tweets, each tweet has 15 features. The most relevant feature to this project is the text which contains the tweet text. Some other features are extracted from other features such as country name is extracted from location, where it contains the user location at the time of the Tweet. Another important feature of this project is the label of the tweet where it extracted from tweet text using Sentiment Analysis tools.
+The dataset is available in ```.csv``` format. It consists of 5110 observations/data points with 12 attributes or features. From exploratory data analysis, the age feature has an important role in stroke prediction which most models deployed confirmed afterwards. Other features were not definately if they are important due to the imbalanced dataset that has been treated with Synthetic Minority Oversampling Technique (SMOTE). Another important feature of this project is the label of the stroke whether the person is predicted with a stroke or not.
 
-## Algorithms 
-
-***Feature Engineering***
-
-- Cleaning the text feature by converting the chars to lower case, removing all non-chars, removing stop words, and applying lemmatization.
-
-- Labeling the text using the ```SentimentIntensityAnalyzer``` and ```Blobtext``` to 0 for negative text and 1 for positive text 
-
-- Determining vaccine type of each text using words filters (this is not accurate because some texts are for more than one type)
 
 ***Models***
 
-Naive bayes, and random forest were used to classify the tweets. The naive bayes get the higher accuracy with ```Blobtext``` labeling. 
+Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Support-Vector Machines (SVM),Random Forest and XGBoost are trained to predict stroke. The Random Forest has the highiest accuracy.
 
-***Model Evaluation and Selection***
+***Models Evaluation and Selection***
 
-Naive Bayes, and random forest were used to classify the tweets. The naive Bayes get the higher accuracy with Blob text labeling. The models were trained on a 25/75 test vs. train. Each model train twice on sentiment analysis labels and bold text labels. 
-The official metric was the accuracy of the model, where the model tested on the accuracy, precision, recall, and F1 score. The result of used model: 
-- Accuracy: 97%
-- Precision: 95%
-- Recall: 96%
-- F1: 95%
+The following metrics summarize the results of all ML models used in this project : 
+
+|           Model Name           |  Accuracy  |    F1    |   Precision   |    Recall   |
+| ------------------------------ | ---------- | -------- | ------------- | ----------- |
+| Logistic without Scaling       |            |          |               |             |
+| Logistic with Scaling          |            |          |               |             |
+| Logistic with Scaling & Tuning |            |          |               |             |
+| KNN with Scaling               |            |          |               |             |
+| Decision Tree with Scaling     |            |          |               |             |
+| SVM without Scaling            |            |          |               |             |
+| SVM with Scaling               |            |          |               |             |
+| Random Forest with Scaling     |            |          |               |             |
+| XGBoost with Scaling           |            |          |               |             |
+| XGBoost without Scaling        |            |          |               |             |
 
 ## Tools
 
-- Pandas for data manipulation
-- Scikit-learn for modeling
-- re for clean data
-- nltk for natural language processing
-- Matplotlib for plotting
-- streamlit for interactive visualizations
+- Pandas library for data frames
+- Numpy for mathematical operations
+- Matplotlib and Seaborn for plots
+- SKlearn for modeling
+- One-Hot-Encoding for categorical labeling
 
 ## Communication
 
-The slides are provided [here](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/Presentation.pdf), besides details are provided at the [readme](https://github.com/imnawar/COVID-19_Vaccines_Tweets/blob/main/project_readme.md) of the project.
-Feel free to any pull requests. 
-
-<!-- # Usage 
-
-To run this project you can run ```python main.py``` from your command-line after installing the requerments. This command will run the project with the developed API to show the results and use the pre-trained model in predecting sentiment.  -->
+The presentation show is provided [here](https://github.com/jefnkhalaf/Stroke-Prediction/edit/main/Final_Phase/Presentation.pdf), besides details are provided at the [readme](https://github.com/jefnkhalaf/Stroke-Prediction/blob/main/README.md) of the project.
+for any enquiries, you can contact us via [Email]( mailto:jefnkhalaf@gmail.com)
