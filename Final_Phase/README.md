@@ -1,3 +1,7 @@
+[![Follow @StrokePred on Twitter](https://img.shields.io/twitter/follow/strokepred?style=social)](https://twitter.com/StrokePred)
+
+<img src="https://topnews.in/healthcare/sites/default/files/styles/large/public/Stroke7.jpg?itok=xInaWFYK" width="200" height="200">
+
 # Stroke Prediction
 Jefn Alshammari & Abdulaziz Almass
 ## Abstract
