@@ -5,7 +5,7 @@
 # Stroke Prediction
 Jefn Alshammari & Abdulaziz Almass
 ## Abstract
-This project aimed to predict stroke for people by analyzing a dataset found in Kaggle using different machine learning models(MLs) to help the medical staff to recongize those people with high risk of getting stroke in the future. The used dataset was trained and get X% accuracy as the highest value of the different used models.  
+This project aimed to predict stroke for people by analyzing a dataset found in [Kaggle](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset) using different machine learning models(MLs) to help the medical staff to recongize those people with high risk of getting stroke in the future. The used dataset was trained and get X% accuracy as the highest value of the different used models.  
 
 <!-- The data has been explored, cleaned and One-Hot-Encoding for some of the features such as "gender" ...etc.  -->
 
