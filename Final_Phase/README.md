@@ -50,4 +50,4 @@ The following metrics summarize the results of all ML models used in this projec
 ## Communication
 
 The presentation show is provided [here](https://github.com/jefnkhalaf/Stroke-Prediction/edit/main/Final_Phase/Presentation.pdf), besides details are provided at the [readme](https://github.com/jefnkhalaf/Stroke-Prediction/blob/main/README.md) of the project.
-for any enquiries, you can contact us via [Email]( mailto:jefnkhalaf@gmail.com)
+for any enquiries, you can contact us via [Email]( mailto:jefnkhalaf@gmail.com) or Twitter via [![Follow @StrokePred on Twitter](https://img.shields.io/twitter/follow/strokepred?style=social)](https://twitter.com/StrokePred)
