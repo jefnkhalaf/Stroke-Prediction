@@ -19,7 +19,7 @@ This project is one of the T5 Data Science BootCamp requirements. Data provided 
 The dataset is available in ```.csv``` format. It consists of 5110 observations/data points with 12 attributes or features. From exploratory data analysis, the age feature has an important role in stroke prediction which most models deployed confirmed afterwards. Other features were not definately if they are important due to the imbalanced dataset that has been treated with Synthetic Minority Oversampling Technique (SMOTE). Another important feature of this project is the label of the stroke whether the person is predicted with a stroke or not.
 
 
-***Models***
+## Models
 
 Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Support-Vector Machines (SVM),Random Forest and XGBoost are trained to predict stroke. The Random Forest has the highiest accuracy.
 
